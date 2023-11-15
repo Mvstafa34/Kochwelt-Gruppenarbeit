@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="./img/logo_small.png">
+  <title>Neapolitanische Pizza</title>
+  <link rel="stylesheet" href="./styles/rezept.css" />
+  <script src="./scripts/index.js"></script>
+  <link rel="stylesheet" href="./styles/fonts.css">
+</head>
+
+<body onload="includeHTML()">
+  <header w3-include-html="./templates/header.html">
+
+  </header>
+  <div class="line"></div>
+  <section class="sect-1">
+    <h1 class="sect-1-h1">Neapolitanische Pizza</h1>
+    <img class="sect-1-img" src="./img/gennaro_pizzateig-1422_800x1200.jpg" alt="" />
+
+    <div class="sect-1-logoText">
+      <div class="sect-1-logtext-margin-bg">
+        <img class="inner-logo" src="./img/icons/clock-regular.svg" alt="" />
+        <span class="inner-text">1 Std. 35 Min.</span>
+      </div>
+      <div class="sect-1-logtext-margin-bg">
+        <img class="inner-logo" src="./img/icons/brain-solid.svg" alt="" />
+        <span class="inner-text">Mittel</span>
+      </div>
+      <div class="sect-1-logtext-margin-bg">
+        <img class="inner-logo" src="./img/icons/calendar-alt-regular.svg" alt="" />
+        <span class="inner-text">01.11.2023</span>
+      </div>
+    </div>
+  </section>
+  <div class="line2"></div>
+  <section class="sect-2">
+    <div class="sect-2-zutInpBut-flex">
+      <h2 class="sect-2-h2">Zutaten für :</h2>
+      <input id="inputnumber" type="number" placeholder="1" min="1" value="1" /><button
+        onclick="multiplyIngredient('pizza')">
+        <p>Portionen</p>
+      </button>
+    </div>
+    <!-- table -->
+    <table id="tableIngredient">
+      <tr>
+        <td><b>500 g</b></td>
+        <td>Mehl Typ 550</td>
+      </tr>
+      <tr>
+        <td><b>10 g</b></td>
+        <td>
+          frische Hefe
+        </td>
+      </tr>
+      <tr>
+        <td><b>10 g</b></td>
+        <td>
+          Salz
+        </td>
+      </tr>
+      <tr>
+        <td><b>325 ml</b></td>
+        <td>warmes Wasser
+        </td>
+      </tr>
+      <tr>
+        <td><b>5 Prisen</b></td>
+        <td>Semmelbrösel</td>
+      </tr>
+      <tr>
+        <td><b>200 ml</b></td>
+        <td>passierte oder Eiertomaten, aus der Dose</td>
+      </tr>
+      <tr>
+        <td><b>200 g</b></td>
+        <td>Büffelmozzarella, grob zerkleinert</td>
+      </tr>
+      <tr>
+        <td><b>30 g</b></td>
+        <td>Parmesan, frisch gerieben</td>
+      </tr>
+      <tr>
+        <td><b>4 EL</b></td>
+        <td>Olivenöl</td>
+      </tr>
+      <tr>
+        <td><b>nach Geschmack</b></td>
+        <td>Salz, Zucker und Pfeffer</td>
+      </tr>
+    </table>
+  </section>
+  <section class="sect-3">
+    <h2 class="sect-3-h2">Zubereitung</h2>
+    <div class="sect-3-logoTextFlex">
+      <div class="sect-1-logtext-margin-bg">
+        <img class="inner-logo" src="./img/icons/clock-regular.svg" alt="" />
+        <span class="inner-text">Vorbereitung ca. 20 Minuten</span>
+      </div>
+      <div class="sect-1-logtext-margin-bg">
+        <img class="inner-logo" src="./img/icons/clock-regular.svg" alt="" />
+        <span class="inner-text">Backzeit ca. 15 Minuten</span>
+      </div>
+      <div class="sect-1-logtext-margin-bg">
+        <img class="inner-logo" src="./img/icons/clock-regular.svg" alt="" />
+        <span class="inner-text">Gehzeit ca. 45 Minuten</span>
+      </div>
+    </div>
+
+    <p class="zubText">
+      1. <b>Teig vermengen:</b> <br />
+      • Das Mehl zusammen mit dem Salz in einer großen Schüssel vermengen und die Hefe in 325 ml lauwarmen Wasser
+      auflösen. <br />
+      • Die aufgelöste Hefe nach und nach unter das Mehl mischen und in der Schüssel zu einem glatten Teig vermengen.
+      <br />
+      <br />
+      2. <b>Teig kneten:</b> <br />
+      • Nachdem der Teig glatt ist, den Teig (in der Schüssel) zu einer Kugel formen und mit einem Tuch abdecken und für
+      5 Minuten ruhen lassen. <br />
+      • Den Teig auf die Arbeitsfläche geben und 10 Minuten kneten und danach in 2 Hälften teilen und jede Hälfte noch
+      einmal 5 Minuten kneten. <br />
+      • Danach die Hälften zu 4 Kugeln formen. <br />
+      <br />
+      3. <b>Teig gehen lassen:</b><br />
+      • Ein sauberes Küchentuch auf ein Backblech geben und mit etwas Mehl bestäuben. <br />
+      • Die Kugeln darauf legen und mit einem feuchten Tuch abdecken und für 30 Minuten an einem warmen Ort gehen
+      lassen. <br />
+      • Danach kann der Teig ausgerollt und belegt werden, siehe nachfolgendes Rezept. <br />
+      <br />
+      4. <b>Zum Belegen vorbereiten:</b><br />
+      • Die Eiertomaten in eine Schüssel geben und mit einer Gabel leicht zerdrücken, mit Salz, Zucker und Pfeffer
+      würzen und gut durchmischen. <br />
+      • Den Backofen auf 250 Grad Ober- und Unterhitze vorheizen und 2 Backbleche mit Semmelbröseln bestreuen. <br />
+      • Den Pizzateig ausrollen und jede Portion auf einer leicht bemehlten Fläche möglichst dünn zu einem Kreis von ca.
+      20 cm Durchmesser ausrollen und dabei aufpassen, dass er nicht reißt. Den Rand ruhig etwas dicker lassen.<br />
+      <br />
+      5. <b>Käse verteilen:</b><br />
+      • Etwas von der Tomatensauce auf der Pizza verteilen und mit ein wenig von dem frisch geriebenen Parmesan
+      bestreuen. <br />
+      • Den Mozzarella zupfen und auf der Pizza verteilen. <br />
+      <br />
+      6. <b>Backen:</b><br />
+      • Ich backe die Pizzen nacheinander auf dem Pizzastein des Meateor Helios. Hier sind sie nach 4-5 Minuten schon
+      perfekt. Auf dem Pizzastein im Backofen sollten sie ca. 10-12 Minuten benötigen und auf dem mit Semmelbröseln
+      belegten Backblech gebacken, brauchen sie ca. 25-30 Minuten. <br />
+      • Nach dem Backen die Pizzen mit Basilikumblättern belegen und mit etwas Olivenöl beträufeln. <br />
+      <br />
+      <br />
+      <strong>Bitte beachten Sie, dass Sie bei Bedarf die Zutatenmengen anpassen
+        können, um den persönlichen Vorlieben und Bedürfnissen gerecht zu
+        werden.</strong>
+    </p>
+
+    <h3 class="sect-3-h3">Rezept erstellt von</h3>
+    <div class="author-flex">
+      <img class="author-img" src="./img/pb-kakar.png" alt="" />
+      <p class="authorName">Ghulammustafa Kakar</p>
+    </div>
+  </section>
+  <footer w3-include-html="./templates/footer.html">
+
+  </footer>
+</body>
+
+</html>

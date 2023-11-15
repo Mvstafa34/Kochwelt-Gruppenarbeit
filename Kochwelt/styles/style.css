@@ -1,0 +1,267 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+button {
+    color: #FFFFFF;
+    background-color: #008000;
+    border: 0;
+    padding: 15px 60px;
+    width: auto;
+    font-size: 18px;
+    align-self: flex-start;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    background: hsl(120, 100%, 15%);
+}
+
+img:not(footer img) {
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+
+/* ---------------------------------------- Standardwerte ---------------------------------------- */
+
+.start-main {
+    margin: 75px 180px;
+    width: auto;
+    display: flex;
+    gap: 35px;
+}
+
+.start-main .right {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.start-main .right h1 {
+    margin-bottom: 30px;
+}
+
+.start-main .right p {
+    margin-bottom: 100px;
+}
+
+.start-main .left img {
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.start-main .left img:hover {
+    filter: opacity(80%);
+}
+
+/* ---------------------------------------- Startseite: Main ---------------------------------------- */
+
+.start-new {
+    background-color: #EFEFEF;
+
+}
+
+.start-new .container {
+    margin: 0 180px;
+    padding-top: 35px;
+    padding-bottom: 100px;
+    width: auto;
+}
+
+.start-new h1 {
+    margin-bottom: 35px;
+}
+
+.start-new .down {
+    display: flex;
+    justify-content: space-between;
+}
+
+.start-new .down img {
+    width: 225px;
+    height: 225px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.start-new .down img:hover {
+    filter: opacity(80%);
+}
+
+/* ---------------------------------------- Startseite: New ---------------------------------------- */
+
+.start-article {
+    margin-bottom: 128px;
+}
+
+.start-article h1 {
+    margin: 50px 0;
+}
+
+.start-article .left-right {
+    display: flex;
+    margin: 0 180px;
+}
+
+.start-article .left-right img {
+    width: 225px;
+    height: 225px;
+    object-fit: cover;
+}
+
+.start-article .left-right p {
+    margin-top: 15px;
+    margin-right: 30px;
+}
+
+/* ---------------------------------------- Startseite: Article ---------------------------------------- */
+
+@media (max-width: 1135px) {
+    .start-main {
+        margin: 75px 90px;
+    }
+
+    .start-new .container,
+    .start-article .left-right {
+        margin: 0 90px;
+    }
+}
+
+@media (max-width: 950px) {
+    .start-main {
+        margin: 37.5px 45px;
+    }
+
+    .start-main .left img {
+        width: 337.5px;
+        height: 225px;
+    }
+
+    .start-main .right h1 {
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .start-main .right p {
+        margin-bottom: 50px;
+    }
+
+    p {
+        font-size: 14.5px;
+    }
+
+    button {
+        padding: 10px 40px;
+        font-size: 14.5px;
+    }
+
+    .start-new .container,
+    .start-article .left-right {
+        margin: 0 45px;
+    }
+
+    .start-new .down img,
+    .start-article .left-right img {
+        width: 168.75px;
+        height: 168.75px;
+    }
+
+    .start-article {
+        margin: 0 0 96px;
+    }
+}
+
+@media (max-width: 690px) {
+    .start-main .left img {
+        width: 300px;
+        height: 175px;
+    }
+
+    .start-new .down {
+        flex-direction: column;
+        gap: 17.5px
+    }
+
+    .start-main {
+        flex-direction: column;
+        align-items: center;
+        margin: 18.75px 22.5px;
+        gap: 17.5px;
+    }
+
+    .start-main .right {
+        align-items: center;
+    }
+
+    .start-main .right h1 {
+        margin-bottom: 7.5px;
+    }
+
+    .start-main .right p {
+        margin-bottom: 25px;
+        text-align: center
+    }
+
+    .start-new .container,
+    .start-article .left-right {
+        margin: 0 22.5px;
+    }
+
+    .start-new h1 {
+        margin-bottom: 25px;
+    }
+
+    .start-article .left-right {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 17.5px;
+    }
+
+    .start-article .left-right p {
+        margin: 0;
+    }
+
+    .start-new .container {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    
+    .start-article  {
+        margin: 0 0 50px;
+    }
+
+    figure {
+        text-align: center;
+    }
+
+    .start-article h1 {
+        margin: 25px;
+    }
+}

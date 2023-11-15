@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="./img/logo_small.png">
+  <title>Big Mac Rolle</title>
+  <link rel="stylesheet" href="./styles/rezept.css" />
+  <script src="./scripts/index.js"></script>
+  <link rel="stylesheet" href="./styles/fonts.css">
+</head>
+
+<body onload="includeHTML()">
+  <header w3-include-html="./templates/header.html">
+
+  </header>
+  <div class="line"></div>
+  <section class="sect-1">
+    <h1 class="sect-1-h1">Big Mac Rolle</h1>
+    <img class="sect-1-img" src="./img/BigMacRolle-11.jpg" alt="" />
+
+    <div class="sect-1-logoText">
+      <div class="sect-1-logtext-margin-bg">
+        <img class="inner-logo" src="./img/icons/clock-regular.svg" alt="" />
+        <span class="inner-text">35 Minuten</span>
+      </div>
+      <div class="sect-1-logtext-margin-bg">
+        <img class="inner-logo" src="./img/icons/brain-solid.svg" alt="" />
+        <span class="inner-text">Mittel</span>
+      </div>
+      <div class="sect-1-logtext-margin-bg">
+        <img class="inner-logo" src="./img/icons/calendar-alt-regular.svg" alt="" />
+        <span class="inner-text">29.10.2023</span>
+      </div>
+    </div>
+  </section>
+  <div class="line2"></div>
+  <section class="sect-2">
+    <div class="sect-2-zutInpBut-flex">
+      <h2 class="sect-2-h2">Zutaten für :</h2>
+      <input id="inputnumber" type="number" placeholder="1" min="1" value="1" /><button
+        onclick="multiplyIngredient('bigmac')">
+        <p>Portionen</p>
+      </button>
+    </div>
+    <!-- table -->
+    <table id="tableIngredient">
+      <tr>
+        <td><b>250 g</b></td>
+        <td>Magerquark</td>
+      </tr>
+      <tr>
+        <td><b>100 g</b></td>
+        <td>
+          geriebener Käse
+        </td>
+      </tr>
+      <tr>
+        <td><b>3 x</b></td>
+        <td>
+          Eier
+        </td>
+      </tr>
+      <tr>
+        <td><b>1 TL</b></td>
+        <td>Pizzagewürz</td>
+      </tr>
+      <tr>
+        <td><b>4 x</b></td>
+        <td>Gewürzgurken</td>
+      </tr>
+      <tr>
+        <td><b>2 x</b></td>
+        <td>Zwiebel</td>
+      </tr>
+      <tr>
+        <td><b>1 x</b></td>
+        <td>Knoblauchzehe</td>
+      </tr>
+      <tr>
+        <td><b>4 EL</b></td>
+        <td>Mayonnaise (light)</td>
+      </tr>
+
+      <tr>
+        <td><b>1 EL</b></td>
+        <td>Ketchup</td>
+      </tr>
+      <tr>
+        <td><b>1 TL</b></td>
+        <td>Senf</td>
+      </tr>
+      <tr>
+        <td><b>1 TL</b></td>
+        <td>Weißweinessig</td>
+      </tr>
+      <tr>
+        <td><b>nach Geschmack</b></td>
+        <td>Salz und Pfeffer</td>
+      </tr>
+      <tr>
+        <td><b>1 TL</b></td>
+        <td>Olivenöl</td>
+      </tr>
+      <tr>
+        <td><b>150 g</b></td>
+        <td>Rinderhackfleisch</td>
+      </tr>
+      <tr>
+        <td><b>1 x</b></td>
+        <td>Tomate</td>
+      </tr>
+      <tr>
+        <td><b>2 Scheiben</b></td>
+        <td>Cheddar Schmelzkäse</td>
+      </tr>
+      <tr>
+        <td><b>4 x</b></td>
+        <td>Salatblätter</td>
+      </tr>
+    </table>
+  </section>
+  <section class="sect-3">
+    <h2 class="sect-3-h2">Zubereitung</h2>
+    <div class="sect-3-logoTextFlex">
+      <div class="sect-1-logtext-margin-bg">
+        <img class="inner-logo" src="./img/icons/clock-regular.svg" alt="" />
+        <span class="inner-text">Arbeitszeit ca. 30 Minuten</span>
+      </div>
+      <div class="sect-1-logtext-margin-bg">
+        <img class="inner-logo" src="./img/icons/clock-regular.svg" alt="" />
+        <span class="inner-text">Backzeit ca. 20 Minuten</span>
+      </div>
+    </div>
+
+    <p class="zubText">
+      1. <b>Teig backen:</b> <br />
+      • Den Backofen auf 180 Grad vorheizen. <br />
+      • Skyr, geriebenen Käse, Eier und Pizzagewürz in eine Schüssel geben und verrühren. <br />
+      • Die Masse auf ein mit Backpapier belegtes Blech geben und im vorgeheizten Backofen für 20 Minuten backen <br />
+      <br />
+      2. <b>Zwiebel braten:</b> <br />
+      • Die halbe Zwiebel fein würfeln. <br />
+      • Öl in einer Pfanne erhitzen und das Hackfleisch zusammen mit den Zwiebelwürfeln kräftig anbraten, dabei mit Salz
+      und Pfeffer würzen. <br />
+      <br />
+      3. <b>Dressing verrühren:</b><br />
+      • Die Gewürzgurken, die halbe Zwiebel und den Knoblauch in kleine Würfel schneiden. <br />
+      • Die Gurken- Zwiebel- und Knoblauchwürfel mit Mayonnaise, Ketchup, Senf, Weißweinessig, Salz und Pfeffer in eine
+      Schüssel geben und ein Dressing anrühren. <br />
+      <br />
+      4. <b>Salat schneiden:</b> <br />
+      • Die Gewürzgurken und die Salatgurke in Scheiben schneiden. <br />
+      • Die Tomate halbieren und ebenfalls in Scheiben schneiden. <br />
+      • Den Salat waschen und in kleine Stücke schneiden. <br />
+      <br />
+      5. <b>Rolle belegen:</b> <br />
+      • Den Teig aus dem Ofen nehmen. <br />
+      • Nun mit dem Dressing bestreichen und mit Hackfleisch, Käse, Tomaten, Gurken und Salat belegen. <br />
+      • Mit Hilfe von einem zweiten Backpapier zu einer Rolle zusammenrollen. <br />
+      <br />
+      <b>Genießen:</b> <br />
+      • Die Rolle in Scheiben schneiden und genießen! <br />
+      • Wenn du magst, kannst du die Big Mac Rollen noch kurz im Ofen erwärmen, dann schmilzt der Käse besonders gut.
+      <br />
+      <br />
+      <strong>Bitte beachten Sie, dass Sie bei Bedarf die Zutatenmengen anpassen
+        können, um den persönlichen Vorlieben und Bedürfnissen gerecht zu
+        werden.</strong>
+    </p>
+
+    <h3 class="sect-3-h3">Rezept erstellt von</h3>
+    <div class="author-flex">
+      <img class="author-img" src="./img/pb-kakar.png" alt="" />
+      <p class="authorName">Ghulammustafa Kakar</p>
+    </div>
+  </section>
+  <footer w3-include-html="./templates/footer.html">
+
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,294 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+:root {
+  --white: #ffffff;
+  --light: #f5f0e1;
+  --dark: #1e3d59;
+  --default: #000000;
+  --h1: #1e1b1b;
+  --h2: #1e1b1b;
+  --h3: #1e1b1b;
+  --p: #675e54;
+  --footer: rgb(64, 59, 59);
+  --raleway: "Raleway", sans-serif;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-700: 700;
+}
+
+/* section 4 */
+main {
+  background: url("../img/wok.jpg");
+  background-size: cover;
+  object-fit: cover;
+  background-image: 4;
+  height: 100%;
+  background-repeat: no-repeat;
+  margin: 8px;
+  padding: 16px 0 32px 0;
+}
+
+.sect-4 {
+  margin: 16px 0 90px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.textH1 {
+  font-family: var(--raleway);
+  font-weight: 700;
+  color: white;
+  font-size: 40px;
+  margin: 16px 16px;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+label {
+  display: inline-block;
+  min-width: 8em;
+  text-align: left;
+}
+
+input {
+  width: 24em;
+  padding: 0.7em;
+  color: rgb(79, 60, 48);
+}
+
+textarea {
+  width: 24em;
+  padding: 0.7em;
+  color: rgb(169, 235, 103);
+  resize: none;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+}
+
+label:first-child {
+  vertical-align: top;
+}
+
+input[type="reset"],
+input[type="submit"] {
+  width: 160px;
+}
+
+fieldset div {
+  display: flex;
+  justify-content: center;
+}
+
+/* Hintergrundfarben und Rahmen */
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: rgb(255, 255, 255);
+  border: none;
+  border: 2px solid #008000;
+  border-radius: 8px;
+  color: rgba(0, 0, 0, 0.847);
+  padding: 16px 0 16px 0;
+}
+
+/* Rahmen */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea {
+  border: none;
+  background: #EFEFEF;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.087);
+  color: black;
+  font-weight: 500;
+}
+
+/* Platzhalter */
+::placeholder {
+  font-weight: 300;
+  color: #403B3B;
+  font-style: italic;
+}
+
+/* Focus */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+  background: hsl(120, 50%, 75%);
+  border-bottom: 2px solid white;
+}
+
+/* Outlines entfernen */
+input,
+textarea {
+  outline: none;
+}
+
+/* Buttons */
+input[type="reset"],
+input[type="submit"] {
+  color: #FFFFFF;
+  background-color: #008000;
+  border: 0;
+  padding: 10px 40px;
+  width: auto;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  background: hsl(120, 100%, 15%);
+}
+
+/* Suchfeld */
+/* 
+.search input[type="text"] {
+  width: 150px;
+  box-sizing: border-box;
+  border: 2px solid #008000;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url("");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+ */
+.search ::placeholder {
+  color: rgb(70, 131, 180);
+}
+
+/* Animation hinzufügen */
+.search input[type="text"] {
+  transition: width 0.4s ease-in-out;
+}
+
+.search {
+  margin-top: 16px;
+}
+
+.search input[type="text"]:focus {
+  width: 100%;
+  background: rgb(173, 216, 230);
+}
+
+.flex {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 16px;
+}
+
+.bild-wok {
+  width: 340px;
+  padding: 10px;
+  /* width: 200px;
+  height: 480px;*/
+  /* padding: 8px */
+  object-fit: cover;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+.pp {
+  font-family: var(--raleway);
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  margin-bottom: 16px;
+  padding: 16px;
+}
+
+i {
+  padding-left: 5px;
+}
+
+label {
+  padding-left: 5px;
+}
+
+.mail-sended {
+  height: 80vh;
+  width: auto;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mail-sended h1 {
+  background-color: #403B3B;
+  padding: 15px 60px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* ---------------------------------------- Media Queries ---------------------------------------- */
+
+@media (max-width: 768px) {
+  .textH1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  
+  .sect-4 {
+    margin: 16px 0 46px;
+  }
+
+  input, textarea {
+    width: 80vw;
+  }
+
+  label {
+    text-align: center;
+  }
+
+  .mail-sended h1 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 395px) {
+  input[type="reset"], input[type="submit"] {
+    padding: 5px 20px;
+  }
+
+  .sect-4 {
+    margin: 16px 0 23px;
+  }
+
+  .mail-sended h1 {
+    font-size: 18px;
+  }
+}
+

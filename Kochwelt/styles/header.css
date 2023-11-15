@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.menu-bar {
+    display: flex;
+    flex: 1;
+    padding: 0 180px;
+
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1.5px 6px 0px;
+}
+
+.logo-big {
+    height: 80px;
+    display: flex;
+    margin: 10px 0;
+}
+
+.menu {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.menu a {
+    padding: 10px 0;
+    margin: 0 14px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+}
+
+.menu a:hover {
+    color: #008000;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: green;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+.btn-style {
+    border-style: none;
+    padding: 10px 14px;
+}
+
+.btn-style:hover {
+    background-color: orange;
+}
+
+.active {
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+.photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.baklava {
+    width: 900px;
+    height: 300px;
+}
+
+.time-cooking {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+}
+
+.time-img {
+    height: 45px;
+}
+
+.portion-calc {
+    display: flex;
+    margin: 50px;
+    padding-left: 150px;
+}
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    margin-left: 150px;
+    width: 80%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  .zube {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .zube-cooking {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .zube-time {
+    display: flex;
+    flex: 1;
+    font-size: 12px;
+    margin-left: 130px;
+  }
+
+  footer {
+    background-color: #403B3B;
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+footer .left-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 180px;
+}
+
+footer .small-logo {
+    width: auto;
+    height: 100px;
+    filter: invert(100%);
+}
+
+footer .links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+footer .social-media {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+footer .social-media img {
+    width: auto;
+    height: 30px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 50px;
+    margin-left: 100px;
+}
+
+.created-by {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 10px 14px;
+    margin-left: 130px;
+}
+
+.created-by img {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.created-img {
+    display: flex;
+    flex: 1;
+    gap: 40px;
+    align-items: center;
+}
+
+.nav-open {
+    display: none;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.mobile-nav {
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 4px -2px;
+    transition: 0.3s;
+}
+
+/* ---------------------------------------- Media Queries ---------------------------------------- */
+
+@media (max-width: 1135px) {
+    .menu-bar {
+        padding: 0 90px;
+    }
+}
+
+@media (max-width: 950px) {
+    .menu-bar {
+        padding: 0 45px;
+    }
+
+    .logo-big {
+        height: 60px;
+    }
+
+    .menu a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 715px) {
+    .menu-bar {
+        padding: 0 22.5px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .nav-open {
+        display: block;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+}

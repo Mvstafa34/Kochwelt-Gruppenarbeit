@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="./img/logo_small.png">
+  <title>Baklava</title>
+  <link rel="stylesheet" href="./styles/rezept.css" />
+  <script src="./scripts/index.js"></script>
+  <link rel="stylesheet" href="./styles/fonts.css">
+</head>
+
+<body onload="includeHTML()">
+  <header w3-include-html="./templates/header.html">
+
+  </header>
+  <div class="line"></div>
+  <section class="sect-1">
+    <h1 class="sect-1-h1">Baklava</h1>
+    <img class="sect-1-img" src="./img/baklava.jpg" alt="" />
+
+    <div class="sect-1-logoText">
+      <div class="sect-1-logtext-margin-bg">
+        <img class="inner-logo" src="./img/icons/clock-regular.svg" alt="" />
+        <span class="inner-text">60 Minuten</span>
+      </div>
+      <div class="sect-1-logtext-margin-bg">
+        <img class="inner-logo" src="./img/icons/brain-solid.svg" alt="" />
+        <span class="inner-text">Einfach</span>
+      </div>
+      <div class="sect-1-logtext-margin-bg">
+        <img class="inner-logo" src="./img/icons/calendar-alt-regular.svg" alt="" />
+        <span class="inner-text">27.10.2023</span>
+      </div>
+    </div>
+  </section>
+  <div class="line2"></div>
+  <section class="sect-2">
+    <div class="sect-2-zutInpBut-flex">
+      <h2 class="sect-2-h2">Zutaten für :</h2>
+      <input id="inputnumber" type="number" placeholder="1" min="1" value="1" /><button
+        onclick="multiplyIngredient('baklava')">
+        <p>Portionen</p>
+      </button>
+    </div>
+    <!-- table -->
+    <table id="tableIngredient">
+      <tr>
+        <td><b>125 g</b></td>
+        <td>Filoteig aus dem Kühlregal</td>
+      </tr>
+      <tr>
+        <td><b>70 ml</b></td>
+        <td>
+          Wasser
+        </td>
+      </tr>
+      <tr>
+        <td><b>150 g</b></td>
+        <td>
+          Zucker
+        </td>
+      </tr>
+      <tr>
+        <td><b>50 g</b></td>
+        <td>Honig</td>
+      </tr>
+      <tr>
+        <td><b>50 g</b></td>
+        <td>gehackte Pistazien</td>
+      </tr>
+      <tr>
+        <td><b>120 g</b></td>
+        <td>gehackte Mandeln</td>
+      </tr>
+      <tr>
+        <td><b>120 g</b></td>
+        <td>gehackte Walnüsse</td>
+      </tr>
+      <tr>
+        <td><b>1 TL</b></td>
+        <td>Zimt</td>
+      </tr>
+      <tr>
+        <td><b>125 g</b></td>
+        <td>Flüssige Butter</td>
+      </tr>
+      <tr>
+        <td><b>3 EL</b></td>
+        <td>gehackte Pistazien zum Garnieren</td>
+      </tr>
+    </table>
+  </section>
+  <section class="sect-3">
+    <h2 class="sect-3-h2">Zubereitung</h2>
+    <div class="sect-3-logoTextFlex">
+      <div class="sect-1-logtext-margin-bg">
+        <img class="inner-logo" src="./img/icons/clock-regular.svg" alt="" />
+        <span class="inner-text">Arbeitszeit ca. 30 Minuten</span>
+      </div>
+      <div class="sect-1-logtext-margin-bg">
+        <img class="inner-logo" src="./img/icons/clock-regular.svg" alt="" />
+        <span class="inner-text">Backzeit ca. 35 Minuten</span>
+      </div>
+    </div>
+
+    <p class="zubText">
+      1. <b>Vorbereitung:</b> <br />
+      • Die Auflaufform (20cm x 25cm) mit flüssiger Butter einstreichen. <br />
+      • Alle Nüsse zusammen mit dem Zimt fein hacken, (falls vorhanden kann gerne ein elektrischer Mixer verwendet
+      werden). <br />
+      • Den Backofen auf 170 Grad Ober-/Unterhitze vorheizen. <br />
+      <br />
+      2. <b>Teig:</b> <br />
+      • Die Teigblätter in die richtige Form schneiden und das erste Teigblatt mit flüssiger Butter bestreichen, in die
+      Form geben. <br />
+      • 2 EL von der Nussmischung gleichmäßig darauf verteilen, den Vorgang solange wiederholen bis die Zutaten
+      aufgebraucht sind, mit einem Teigblatt abschließen.<br />
+      <br />
+      3. <b>Mischung:</b><br />
+      • Die Baklava in kleine Quadrate oder Rauten schneiden. <br />
+      • Dann Wasser, Zucker und Honig in einen Topf geben und zum Kochen bringen. <br />
+      • Die Mischung kochen, bis sie zu einem Sirup wird (ca. 3-4 Minuten). Dann den Topf vom Herd nehmen. <br />
+      <br />
+      4. <b>Backen:</b> <br />
+      • Den heißen Sirup gleichmäßig über die geschnittenen Stücke in der Auflaufform gießen. <br />
+      • Dann die Baklava im vorgeheizten Ofen ca. 35 Min. backen. <br />
+      • Die Baklava ist fertig, wenn die Teigblätter goldbraun gefärbt sind. <br />
+      • Jedes Stück mit etwas gehackten Pistazien garnieren. <br />
+      <br />
+      <b>Haltbarkeit:</b><br />
+      • Baklava wird durch den Honig besonders lange haltbar gemacht. <br />
+      • Du kannst das Dessert bei Zimmertemperatur ca. 2 Wochen aufbewahren. <br />
+      • Wenn du die Spezialität länger aufbewahren möchtest, kannst du sie einfach einfrieren und so bis zu 6 Monate
+      aufbewahren. <br />
+      <br />
+      <strong>Bitte beachten Sie, dass Sie bei Bedarf die Zutatenmengen anpassen
+        können, um den persönlichen Vorlieben und Bedürfnissen gerecht zu
+        werden.</strong>
+    </p>
+
+    <h3 class="sect-3-h3">Rezept erstellt von</h3>
+    <div class="author-flex">
+      <img class="author-img" src="./img/WhatsApp Image 2023-10-29 at 12.10.00 PM.jpeg" alt="" />
+      <p class="authorName">Klinton Mita</p>
+    </div>
+  </section>
+  <footer w3-include-html="./templates/footer.html">
+
+  </footer>
+</body>
+
+</html>
